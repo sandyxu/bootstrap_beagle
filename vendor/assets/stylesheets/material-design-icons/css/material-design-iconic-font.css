@@ -4,8 +4,8 @@
  */
 @font-face {
   font-family: 'Material Icons';
-  /*src: url('../fonts/Material-Design-Iconic-Font.woff2?v=2.2.0') format('woff2'), url('../fonts/Material-Design-Iconic-Font.woff?v=2.2.0') format('woff'), url('../fonts/Material-Design-Iconic-Font.ttf?v=2.2.0') format('truetype');*/
-  src: url('/assets/material-design-icons/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0') format('woff2'), url('/assets/material-design-icons/fonts/Material-Design-Iconic-Font.woff?v=2.2.0') format('woff'), url('/assets/material-design-icons/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0') format('truetype');
+  src: url(asset_path('material-design-icons/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0')) format('woff2'), url(asset_path('material-design-icons/fonts/Material-Design-Iconic-Font.woff?v=2.2.0')) format('woff'), url(asset_path('material-design-icons/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0')) format('truetype');
+
   font-weight: normal;
   font-style: normal;
 }
