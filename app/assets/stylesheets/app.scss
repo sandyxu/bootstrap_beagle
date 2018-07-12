@@ -607,9 +607,9 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1140px;
+    max-width: 1400px;
   }
 }
 
@@ -648,8 +648,8 @@ pre code {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .col {
@@ -1254,7 +1254,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -3864,7 +3864,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .navbar-expand-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -5954,7 +5954,7 @@ button.bg-grey:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .d-xl-none {
     display: none !important;
   }
@@ -6443,7 +6443,7 @@ button.bg-grey:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .flex-xl-row {
     flex-direction: row !important;
   }
@@ -6581,7 +6581,7 @@ button.bg-grey:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .float-xl-left {
     float: left !important;
   }
@@ -8247,7 +8247,7 @@ button.bg-grey:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -8673,7 +8673,7 @@ button.bg-grey:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .text-xl-left {
     text-align: left !important;
   }
