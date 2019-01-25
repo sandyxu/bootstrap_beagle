@@ -6,7 +6,3 @@
 /pkg/
 /spec/reports/
 /tmp/
-# Ignore all swap files
-*.DS_Store
-# Ignore Rubymine config
-.idea/

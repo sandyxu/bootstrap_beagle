@@ -1,42 +1,36 @@
 {
-  "_args": [
-    [
-      "@foxythemes/jquery-nestable@1.0.0",
-      "/home/miguel/projects/beagle"
-    ]
-  ],
-  "_from": "@foxythemes/jquery-nestable@1.0.0",
-  "_id": "@foxythemes/jquery-nestable@1.0.0",
+  "_from": "git+https://github.com/foxythemes/jquery-nestable.git",
+  "_id": "jquery-nestable@1.0.0",
   "_inBundle": false,
-  "_integrity": "sha512-K11Y19BGj3+zNHfK+cLUUKkEJO32IP2EMh95EDihVrH3/5lqcgqC1YgzZ+AzcagsQwc37tyTnXWx5RW+BO3DAA==",
-  "_location": "/@foxythemes/jquery-nestable",
+  "_location": "/jquery-nestable",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "@foxythemes/jquery-nestable@1.0.0",
-    "name": "@foxythemes/jquery-nestable",
-    "escapedName": "@foxythemes%2fjquery-nestable",
-    "scope": "@foxythemes",
-    "rawSpec": "1.0.0",
-    "saveSpec": null,
-    "fetchSpec": "1.0.0"
+    "type": "git",
+    "raw": "jquery-nestable@git+https://github.com/foxythemes/jquery-nestable.git",
+    "name": "jquery-nestable",
+    "escapedName": "jquery-nestable",
+    "rawSpec": "git+https://github.com/foxythemes/jquery-nestable.git",
+    "saveSpec": "git+https://github.com/foxythemes/jquery-nestable.git",
+    "fetchSpec": "https://github.com/foxythemes/jquery-nestable.git",
+    "gitCommittish": null
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@foxythemes/jquery-nestable/-/jquery-nestable-1.0.0.tgz",
-  "_spec": "1.0.0",
+  "_resolved": "git+https://github.com/foxythemes/jquery-nestable.git#4a040c4b73b0762195433b5928af3fcf46d5fbe3",
+  "_spec": "jquery-nestable@git+https://github.com/foxythemes/jquery-nestable.git",
   "_where": "/home/miguel/projects/beagle",
   "author": "",
   "bugs": {
     "url": "https://github.com/foxythemes/jquery-nestable/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Nestable ========",
   "homepage": "https://github.com/foxythemes/jquery-nestable#readme",
   "license": "ISC",
   "main": "jquery.nestable.js",
-  "name": "@foxythemes/jquery-nestable",
+  "name": "jquery-nestable",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/foxythemes/jquery-nestable.git"

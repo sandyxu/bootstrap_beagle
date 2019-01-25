@@ -1,37 +1,31 @@
 {
-  "_args": [
-    [
-      "@foxythemes/jvectormap@1.0.0",
-      "/home/miguel/projects/beagle"
-    ]
-  ],
-  "_from": "@foxythemes/jvectormap@1.0.0",
-  "_id": "@foxythemes/jvectormap@1.0.0",
+  "_from": "git+https://github.com/foxythemes/jvectormap.git#master",
+  "_id": "jvectormap@1.0.0",
   "_inBundle": false,
-  "_integrity": "sha512-zopROEGUcXXLeZ5YpA3XJ5FhcavnEKz8Cgw3ecOnkFZZXgxD0GiM1HyJ09CSwdZkEpKP2d5XTqEYkQ61SkRG2w==",
-  "_location": "/@foxythemes/jvectormap",
+  "_location": "/jvectormap",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "@foxythemes/jvectormap@1.0.0",
-    "name": "@foxythemes/jvectormap",
-    "escapedName": "@foxythemes%2fjvectormap",
-    "scope": "@foxythemes",
-    "rawSpec": "1.0.0",
-    "saveSpec": null,
-    "fetchSpec": "1.0.0"
+    "type": "git",
+    "raw": "jvectormap@git+https://github.com/foxythemes/jvectormap.git#master",
+    "name": "jvectormap",
+    "escapedName": "jvectormap",
+    "rawSpec": "git+https://github.com/foxythemes/jvectormap.git#master",
+    "saveSpec": "git+https://github.com/foxythemes/jvectormap.git#master",
+    "fetchSpec": "https://github.com/foxythemes/jvectormap.git",
+    "gitCommittish": "master"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@foxythemes/jvectormap/-/jvectormap-1.0.0.tgz",
-  "_spec": "1.0.0",
+  "_resolved": "git+https://github.com/foxythemes/jvectormap.git#467a493d82641f1ab3d105c82861ef0449cfdd06",
+  "_spec": "jvectormap@git+https://github.com/foxythemes/jvectormap.git#master",
   "_where": "/home/miguel/projects/beagle",
   "author": "",
   "bugs": {
     "url": "https://github.com/foxythemes/jvectormap/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "jVectorMap is a vector-based, cross-browser and cross-platform component for interactive geography-related data visualization on the web. It provides numerious features like smooth zooming and panning, fully-customizable styling, markers, labels and tooltips.",
   "directories": {
     "test": "tests"
@@ -39,7 +33,7 @@
   "homepage": "https://github.com/foxythemes/jvectormap#readme",
   "license": "ISC",
   "main": "jquery-jvectormap.js",
-  "name": "@foxythemes/jvectormap",
+  "name": "jvectormap",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/foxythemes/jvectormap.git"

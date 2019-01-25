@@ -19,13 +19,11 @@
 
       var layoutInfo = context.layoutInfo;
       var $toolbar = layoutInfo.toolbar;
-      var $editor = layoutInfo.editor;
 
       this.initialize = function ( ) {
 
         //Remove the .btn-sm class from toolbar
         $toolbar.find(".btn-sm").removeClass("btn-sm");
-        $editor.find(".custom-control-indicator").removeClass("custom-control-indicator").addClass("custom-control-label");
 
       };
     }

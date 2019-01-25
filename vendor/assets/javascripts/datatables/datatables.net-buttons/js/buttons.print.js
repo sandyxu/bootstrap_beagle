@@ -91,23 +91,12 @@ DataTable.ext.buttons.print = {
 			$.extend( {decodeEntities: false}, config.exportOptions ) // XSS protection
 		);
 		var exportInfo = dt.buttons.exportInfo( config );
-		var columnClasses = $.map( dt.settings()[0].aoColumns, function (col, key) {
-			return col.sClass;
-		} );
 
 		var addRow = function ( d, tag ) {
 			var str = '<tr>';
 
 			for ( var i=0, ien=d.length ; i<ien ; i++ ) {
-				// null and undefined aren't useful in the print output
-				var dataOut = d[i] === null || d[i] === undefined ?
-					'' :
-					d[i];
-				var classAttr = columnClasses[i] ?
-					'class="'+columnClasses[i]+'"' :
-					'';
-
-				str += '<'+tag+' '+classAttr+'>'+dataOut+'</'+tag+'>';
+				str += '<'+tag+'>'+d[i]+'</'+tag+'>';
 			}
 
 			return str + '</tr>';
@@ -165,11 +154,11 @@ DataTable.ext.buttons.print = {
 		} );
 
 		if ( config.customize ) {
-			config.customize( win, config, dt );
+			config.customize( win );
 		}
 
 		// Allow stylesheets time to load
-		win.setTimeout( function () {
+		setTimeout( function () {
 			if ( config.autoPrint ) {
 				win.print(); // blocking - so close will not
 				win.close(); // execute until this is done
