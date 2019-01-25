@@ -915,9 +915,7 @@ var excelStrings = {
 				'<fill>'+
 					'<patternFill patternType="none" />'+
 				'</fill>'+
-				'<fill>'+ // Excel appears to use this as a dotted background regardless of values but
-					'<patternFill patternType="none" />'+ // to be valid to the schema, use a patternFill
-				'</fill>'+
+				'<fill/>'+ // Excel appears to use this as a dotted background regardless of values
 				'<fill>'+
 					'<patternFill patternType="solid">'+
 						'<fgColor rgb="FFD9D9D9" />'+
@@ -1132,7 +1130,7 @@ DataTable.ext.buttons.copyFlash = $.extend( {}, flashButton, {
 		}
 
 		if ( config.customize ) {
-			output = config.customize( output, config, dt );
+			output = config.customize( output, config );
 		}
 
 		flash.setAction( 'copy' );
@@ -1167,13 +1165,12 @@ DataTable.ext.buttons.csvFlash = $.extend( {}, flashButton, {
 		// Set the text
 		var flash = config._flash;
 		var data = _exportData( dt, config );
-		var info = dt.buttons.exportInfo( config );
 		var output = config.customize ?
-			config.customize( data.str, config, dt ) :
+			config.customize( data.str, config ) :
 			data.str;
 
 		flash.setAction( 'csv' );
-		flash.setFileName( info.filename );
+		flash.setFileName( _filename( config ) );
 		_setText( flash, output );
 	},
 
@@ -1227,12 +1224,7 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 
 				// For null, undefined of blank cell, continue so it doesn't create the _createNode
 				if ( row[i] === null || row[i] === undefined || row[i] === '' ) {
-					if ( config.createEmptyCells === true ) {
-						row[i] = '';
-					}
-					else {
-						continue;
-					}
+					continue;
 				}
 
 				row[i] = $.trim( row[i] );
@@ -1382,7 +1374,7 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 
 		// Let the developer customise the document if they want to
 		if ( config.customize ) {
-			config.customize( xlsx, config, dt );
+			config.customize( xlsx );
 		}
 
 		_xlsxToStrings( xlsx );
@@ -1395,9 +1387,7 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 		this.processing( false );
 	},
 
-	extension: '.xlsx',
-	
-	createEmptyCells: false
+	extension: '.xlsx'
 } );
 
 

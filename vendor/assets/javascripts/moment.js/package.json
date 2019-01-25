@@ -23,6 +23,7 @@
   },
   "_requiredBy": [
     "/",
+    "/chart.js",
     "/fullcalendar"
   ],
   "_resolved": "https://registry.npmjs.org/moment/-/moment-2.19.1.tgz",

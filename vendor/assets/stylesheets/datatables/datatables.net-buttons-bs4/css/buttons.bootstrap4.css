@@ -1,10 +1,3 @@
-/*!
- * Beagle v1.5.2
- * https://foxythemes.net
- *
- * Copyright (c) 2018 Foxy Themes
- */
-
 @keyframes dtb-spinner {
   100% {
     transform: rotate(360deg);
@@ -115,9 +108,6 @@ ul.dt-button-collection.dropdown-menu.four-column {
   -o-column-count: 4;
   column-count: 4;
 }
-ul.dt-button-collection.dropdown-menu .dt-button {
-  border-radius: 0;
-}
 
 ul.dt-button-collection {
   -webkit-column-gap: 8px;
@@ -172,9 +162,6 @@ ul.dt-button-collection.four-column {
   -ms-column-count: 4;
   -o-column-count: 4;
   column-count: 4;
-}
-ul.dt-button-collection .dt-button {
-  border-radius: 0;
 }
 ul.dt-button-collection.fixed {
   max-width: none;
