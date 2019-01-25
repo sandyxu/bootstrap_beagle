@@ -1,5 +1,12 @@
+/*!
+ * Beagle v1.5.2
+ * https://foxythemes.net
+ *
+ * Copyright (c) 2018 Foxy Themes
+ */
+
 .ms-container{
-  background: transparent url('/assets/img/switch.png') no-repeat 50% 50%;
+  background: transparent url('../img/switch.png') no-repeat 50% 50%;
   width: 370px;
 }
 
