@@ -1,3 +1,10 @@
+/*!
+ * Beagle v1.7.0
+ * https://foxythemes.net
+ *
+ * Copyright (c) 2019 Foxy Themes
+ */
+
 var App = (function () {
   'use strict';
 
@@ -15,7 +22,8 @@ var App = (function () {
     
     //Select2
     $(".select2").select2({
-      width: '100%'
+      width: '100%',
+      placeholder: 'Select a state'
     });
     
     //Select2 tags
