@@ -22,7 +22,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+从模板资源文件转换成 ruby gem 的过程如下：
+
+1. 图片资源文件从 beagle-v1.7.0/src/assets/img 放到 app/assets/images/img
+2. demo页面有关的js文件从 beagle-v1.7.0/src/js/*.js 放到 app/assets/javascripts/
+3. demo页面有关的css文件从 beagle-v1.7.0/src/sass/*.scss 放到 app/assets/stylesheets/
+4. demo页面的外部引文文件都集中在 beagle-v1.7.0/dist/html/assets/lib/ 每个插件包是按照 html 页面访问的路径放置到了js和 css同一层级文件夹中，但是转换成 ruby gem时按照rails的规范 js 和 css要拆分到 vendor/assets/javascriptions/ 和 vendor/assets/stylesheets/ 2个不同的文件夹中存放。
+5. 修改css中字体font引用路径替换成 asset_path('material-design-icons/fonts/xx') asset_path('summernote/fonts/xx')
+6. 修改 config/beagle-variables.scss 文件中的$img-path，$fonts-path，$lib-path，$bootstrap-path
 
 ## Development
 
