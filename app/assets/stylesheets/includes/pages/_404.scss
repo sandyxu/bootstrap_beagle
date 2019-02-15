@@ -2,7 +2,7 @@
   [Error pages]
 */
 .be-error{
-	
+
 	.error-container{
 		text-align: center;
 		margin-top: 100px;
@@ -75,7 +75,7 @@
 	.error-container{
 
 		.error-number{
-			background: url("#{$img-path}/404-bg.png") no-repeat center center;
+			background: url(asset_path("#{$img-path}/404-bg.png")) no-repeat center center;
 			background-size: contain;
 
 			@include phone {
